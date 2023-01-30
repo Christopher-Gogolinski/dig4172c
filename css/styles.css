@@ -1,0 +1,784 @@
+@font-face {
+    font-family: "BobbyJones Soft-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Bobby Jones Soft.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SegoeUI-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Segoe UI.ttf") format("truetype");
+  }
+
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0; 
+    background: #ffffff;
+}
+
+.main-navigation{
+    font-size:14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-navigation nav{
+    background-color: transparent;
+    margin-right: auto;
+    order: 2;
+}
+
+.main-navigation a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px
+}
+
+.homelogo{
+    margin-left: auto;
+    margin-right: 40%;
+}
+
+/*about page begins */
+
+.ourstory{
+    background-image: url("../img/about-page-image1.png");
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+}
+
+.ourstory-article{
+    width: 800px;
+    height: 642px;
+    background-color: #FFF8EF;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.ourstory-article h1{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+}
+
+.ourstory-article p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.ourvalues{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 70%;
+}
+
+.ourvalues p{
+    display: flex;
+}
+
+.micasa {
+    background-image: url("../img/about-page-image2.png");
+    background-repeat: no-repeat;
+    height: 840px;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.micasa-article{
+    background-color: #25341D;
+    color: white;
+    width: 815px;
+    height: 425px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.micasa-article h1{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+}
+
+.ouradvantages{
+    text-align: center;
+}
+
+.onetwothree-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 1%;
+}
+
+.advantageOne, .advantageTwo, .advantageThree{
+    width: 25%;
+    background-color: #FFF8EF;
+    border-color: #E6DCCE;
+    border-width: 3px;
+    margin-top: 1%;
+}
+
+.advantageOne img, .advantageTwo img, .advantageThree img{
+    margin-top: 5%;
+    width: 50%;
+}
+
+.advantageOne p, .advantageTwo p, .advantageThree p{
+    font-size: 20pt;
+}
+
+.ourteam{
+    margin-top: 5%;
+}
+
+.ourteam h1{
+    margin-left: 5%;
+}
+
+.teampic-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teammemberOne, .teammemberTwo, .teammemberThree{
+    width: 30%;
+    border-width: 3px;
+    margin-top: 1%;
+}
+
+.teammemberOne img, .teammemberTwo img, .teammemberThree img{
+    width: 75%;
+    margin-top: 5%;
+}
+
+/*about page ends */
+
+.footer{
+    background-color: #25341D;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.footer nav{
+    text-align: center;
+}
+
+.footer nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+}
+
+.footer img{
+    width: 15%;
+    margin-left: 75%;
+}
+
+.locations-container{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-top: 1%;
+}
+
+.wesleychapel {
+    margin-top: 2%;
+}
+.wesleychapel-text{
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    border: 2px solid #000;
+}
+
+.wesleychapel-map{
+    float: right;
+    margin-right: 20%;
+}
+
+.lutz {
+    padding-top: 2%;
+}
+.lutz-text{
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    border: 2px solid #000;
+    margin-top: 1%;
+}
+
+.lutz-map{
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.templeterrace {
+    padding-top: 2%;
+}
+.templeterrace-text{
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    border: 2px solid #000;
+    margin-top: 1%;
+}
+
+.templeterrace-map{
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.carrollwood {
+    padding-top: 2%;
+}
+.carrollwood-text{
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    border: 2px solid #000;
+    margin-top: 1%;
+}
+
+.carrollwood-map{
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.odessa {
+    padding-top: 2%;
+}
+.odessa-text{
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    border: 2px solid #000;
+    margin-top: 1%;
+}
+
+.odessa-map{
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.footer-locations{
+    background-color: #25341D;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.footer-locations nav{
+    text-align: center;
+}
+
+.footer-locations nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+}
+
+.footer-locations img{
+    width: 15%;
+    margin-left: 75%;
+}
+
+.create-account-container{
+    width: 100%;
+    background-image: url("../img/create-account-image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.create-account-form-container{
+    width: 50%;
+    padding: 2.5%;
+    padding-left: 7%;
+}
+
+.create-account-form-container h1{
+    font-size: 36pt;
+    letter-spacing: 1.4px;
+}
+
+.create-account-form-container a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+}
+
+.create-account-form-container input[type=text]{
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.create-account-form{
+    width: 70%;
+    margin-top: 2%;
+}
+
+#firstname{
+    width: 40%;
+}
+
+#lastname{
+    width: 40%;
+}
+
+#email, #phone, #password{
+    width: 86%;
+}
+
+.create-account-form-container input[type=submit]{
+    padding: 12px;
+    width: 91%;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    border: 3px solid #000;
+}
+
+.create-account-form-container input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.home{
+    background-image: url("../img/landingbackground.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-navigation-home{
+    font-size:14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-navigation-home nav{
+    background-color: transparent;
+    margin-right: auto;
+    order: 2;
+}
+
+.main-navigation-home a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px
+}
+
+.landing-buttons-container{
+    width: 100%;
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 22%;
+}
+
+.landing-buttons-container a:hover{
+    background-color: #fff;
+}
+
+.landing-menu-button{
+    font-size: 18pt;
+    font-weight: 600;
+    background-color: orange;
+    text-decoration: none;
+    color: #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-right: 2%;
+    border-radius: 40px;
+    border: 5px solid orange;
+}
+
+.landing-order-button{
+    font-size: 18pt;
+    font-weight: 600;
+    background-color: orange;
+    text-decoration: none;
+    color: #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 40px;
+    border: 5px solid orange;
+}
+
+.featured-meals{
+    margin-left: 7%;
+}
+
+.featured-meals-heading{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 26pt;
+}
+
+.our-fan-favorites{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    padding-top: 5%;
+    font-size: 14pt;
+}
+
+.featured-meals-carousel-container{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.featured-meals-carousel-image{
+    width: 45vh;
+}
+
+.ourstory-home{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: #FFF8EF;
+    background-image: url("../img/ourstory-home-image.png");
+    background-repeat: no-repeat;
+    background-size: 28%;
+    background-position: 80%;
+}
+
+.ourstory-home p{
+    width: 30%;
+    padding-left: 7%;
+    padding-top: 2%;
+}
+.ourstory-home-heading{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 26pt;
+    padding-left: 7%;
+}
+
+.a-family-owned-business{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    padding-top: 5%;
+    padding-left: 7%;
+    font-size: 14pt;
+}
+
+.ourstory-home a:hover{
+    background-color: #fff;
+}
+
+.landing-about-button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: orange;
+    text-decoration: none;
+    color: #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 5%;
+    border-radius: 40px;
+    border: 5px solid orange;
+}
+
+.learn-more-button-container{
+    padding-top: 5%;
+    padding-left: 7%;
+}
+
+.book-a-table-container{
+    width: 100%;
+    height: 60vh;
+    background-image: url("../img/book-a-table-image.png");
+    background-repeat: no-repeat;
+}
+
+.book-a-table-article{
+    background-color: #25341D;
+    border-radius: 0px 0px 20px 20px;
+    width: 30%;
+    color: #fff;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.book-a-table-heading{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 26pt;
+    padding-left: 7%;
+}
+
+.book-a-table-text{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 5%;
+    padding-left: 7%;
+    font-size: 14pt;
+}
+
+.book-a-table-article a:hover{
+    background-color: orange;
+}
+
+.book-now-button-container{
+    padding-top: 5%;
+    padding-left: 7%;
+}
+
+.book-now-button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: #25341D;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 14%;
+    padding-right: 14%;
+    margin-top: 5%;
+    border-radius: 40px;
+    border: 2px solid orange;
+}
+
+.weareoninstagram-container{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.weareoninstagram-heading{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 32pt;
+}
+
+.atvallartasfl{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 18pt;
+    background-image: url("../img/instagramicon.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 85vh;
+    height: 32px;
+}
+
+.instagram-images-container{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.instagram-image{
+    width: 30vh;
+}
+
+.contactus-container{
+    background-color: #FFF8EF;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/contactus-background.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: 5%;
+}
+
+.contactus-form-container{
+    width: 40%;
+    float: right;
+    margin-top: 10%;
+}
+
+.contactus-container h1{
+    font-size: 36pt;
+    letter-spacing: 1.4px;
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+}
+
+.contactus-container a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+}
+
+.contactus-container input[type=text]{
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    border: 2px solid orange;
+    border-radius: 15px;
+    letter-spacing: 1.4px;
+}
+
+.contactus-container textarea{
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border: 2px solid orange;
+    border-radius: 15px;
+    resize: none;
+    letter-spacing: 1.4px;
+}
+
+.contactus-form{
+    width: 70%;
+    margin-top: 2%;
+    display: block;
+}
+
+#contactus-firstname{
+    width: 40%;
+}
+
+#contactus-lastname{
+    width: 38.5%;
+}
+
+#contactus-email, #contactus-subject, #contactus-message{
+    width: 86%;
+}
+
+.contactus-container input[type=submit]{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: orange;
+    color: #000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 10%;
+    border-radius: 40px;
+    border: 2px solid orange;
+    letter-spacing: 1.4px;
+}
+
+.contactus-container input:hover{
+    background-color: #fff;
+}
+
+.login-container{
+    width: 100%;
+    background-image: url("../img/login-image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 60vh;
+}
+
+.login-form-container{
+    width: 50%;
+    padding: 2.5%;
+    padding-left: 7%;
+}
+
+.login-form-container h1{
+    font-size: 36pt;
+    letter-spacing: 1.4px;
+}
+
+.login-form-container a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+}
+
+.login-form-container input[type=text]{
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.login-form{
+    width: 70%;
+    margin-top: 2%;
+}
+
+#useremail, #userpassword{
+    width: 85.5%;
+}
+
+.login-form-container input[type=submit]{
+    padding: 12px;
+    width: 91%;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    border: 3px solid #000;
+}
+
+.login-form-container input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
