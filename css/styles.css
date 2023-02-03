@@ -989,7 +989,335 @@ flex-flow: wrap;
  width: 100%;
 }
 /*********************************CHRIS ADD CSS HERE******************/
+.book-container{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.fourteen-and-less{
+    width: 50%;
+    height: 70vh;
+    background-image: url("../img/fourteen-and-less.png");
+    background-repeat: no-repeat;
+}
+
+.groups-and-events{
+    width: 50%;
+    height: 70vh;
+    background-image: url("../img/groups-and-events.png");
+    background-repeat: no-repeat;
+}
+
+.fourteen-and-less a{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: orange;
+    text-decoration: none;
+    color: #000;
+    width: 30%;
+    border-radius: 40px;
+    border: 5px solid orange;
+    display: block;
+    margin-top: 50%;
+    margin-left: 27%;
+    padding: 1%;
+    text-align: center;
+}
+
+.groups-and-events a{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: orange;
+    text-decoration: none;
+    color: #000;
+    width: 30%;
+    border-radius: 40px;
+    border: 5px solid orange;
+    display: block;
+    margin-top: 50%;
+    margin-left: 27%;
+    padding: 1%;
+    text-align: center;
+}
+
+.fourteen-and-less a:hover{
+    background-color: #fff;
+}
+
+.groups-and-events a:hover{
+    background-color: #fff;
+}
+
+.checkout-form-container{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 30%;
+    margin-left: 6%;
+}
+
+.checkout-form-container h2{
+    padding-bottom: 10%;
+    font-size: 36pt;
+}
+
+.checkout-contact-information{
+    font-weight: 600;
+}
+
+.checkout-form-container a{
+    text-decoration: none;
+    color: grey;
+    padding-bottom: 5%;
+    display: block;
+}
+
+.checkout-form-container input{
+    width: 70%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 12pt;
+}
+
+.delivery-method-container{
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.pickup-free-delivery-button{
+    width: 40%;
+    height: 17vh;
+    background-image: url("../img/pickup-free-delivery-button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+
+#free-delivery{
+    margin-top: 37.5%;
+    margin-left: 13.5%;
+    height: 2.4vh;
+}
+
+.home-delivery-button{
+    width: 40%;
+    height: 17vh;
+    background-image: url("../img/home-delivery-button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-left: 10.5%;
+}
+
+#home-delivery{
+    margin-top: 37.5%;
+    margin-left: 13.5%;
+    height: 2.4vh;
+}
+
+.delivery-address-information{
+    font-weight: 600;
+    display: block;
+    padding-top: 5%;
+}
+
+#checkout-firstandlast{
+    margin-top: 3%;
+}
+
+#checkout-country{
+    margin-bottom: 5%;
+}
+
+.payment-method-information{
+    font-weight: 600;
+    display: block;
+    padding-top: 7%;
+}
+
+#checkout-expirydate, #checkout-securitycode{
+    width: 22%;
+}
+
+.expirydate-securitycode-container{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+#billing-same-as-delivery{
+    margin-top: 5%;
+    width: 10%;
+}
+
+.order-placed{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.view-order-button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-right: 2%;
+    border-radius: 40px;
+    border: 3px solid orange;
+}
+
+.cancel-order-button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-right: 2%;
+    border-radius: 40px;
+    border: 3px solid orange;
+}
+
+.order-placed-buttons-container{
+    margin-top: 10%;
+}
+
+.order-placed-buttons-container a:hover{
+    background-color: orange;
+}
+
+.order-placed h1{
+    font-size: 36pt;
+    letter-spacing: 1.4px;
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+}
+
+.return-home-button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-right: 2%;
+    border-radius: 40px;
+    border: 3px solid orange;
+}
+
+.return-home-button:hover{
+    background-color: orange;
+}
+
+.download-the-pdf{
+    text-decoration: none;
+    background: transparent;
+    border: 3px solid orange;
+    border-radius: 30px;
+    padding: 1%;
+    font-weight: 600;
+    color: black;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: block;
+    width: 15%;
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.download-the-pdf:hover{
+    background-color: orange;
+}
+
+.menu-page-container{
+    width: 100%;
+}
+
+.menu-page-container h2{
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    font-size: 36pt;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu-page-container h3{
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+.menu-page-container h4{
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+.dishes-and-toppings-container{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.dishes-and-toppings-container table{
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    margin-top: 2%;
+}
+
+.dishes-and-toppings-container tr{
+    padding-top: 1%;
+}
+
+.dish-price{
+    padding-left: 40vh;
+    text-align: left;
+    font-size: 24pt;
+}
+
+.dish-price-lunch{
+    padding-left: 40vh;
+    text-align: left;
+    font-size: 18pt;
+}
+
+.topping{
+    padding-left: 10vh;
+}
+
+.dish{
+    text-align: left;
+    padding-top: 2%;
+    font-size: 24pt;
+}
+
+.soups-salads-dish-price{
+    padding-left: 50vh;
+}
+
+.dishes-and-toppings-container td{
+    height: 5vh;
+}
 /*********************************CHRIS ADD CSS HERE******************/
 /*remain at bottom*/
 
