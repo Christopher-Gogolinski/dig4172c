@@ -110,6 +110,9 @@ img {
 .main-navigation .menu-list img {
     width: 20px;
 }
+.subpages #nav-bk #nav-list li a{
+    color: black!important;
+}
 
 /*nav styling ends*/
 /*mobile first styling*/
