@@ -122,7 +122,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid red;
     background-color: aliceblue;
     height: 600px;
     position: relative;
@@ -834,7 +833,6 @@ img {
         padding: 0px;
         line-height: 40px;
         text-align: center;
-        border: 1px solid red;
         z-index: 2;
 
     }
@@ -874,7 +872,6 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        border: 1px solid red;
         padding-bottom: 50%;
         background-color: aliceblue;
     }
