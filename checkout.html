@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <!--<link rel="shortcut icon" type="image/png" href=""/>-->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div class="subpages">
         <nav class="main-navigation" id="nav-bk">
@@ -30,53 +31,67 @@
                 <div class="bar"></div>
             </div>
         </nav>
-    </div><!--closes main-navigation container div-->
+    </div>
+    <!--closes main-navigation container div-->
     <div class="checkout-form-container">
-        <h2>CHECKOUT</h2>
-        <span class="checkout-contact-information">CONTACT INFORMATION</span><br>
-        <a href="login.html"><span>ALREADY HAVE AN ACCOUNT? LOG IN</span></a>
-        <form>
-            <input type="text" id="checkout-email" name="checkout-email" placeholder="EMAIL"><br>
-            <input type="text" id="checkout-phonenumber" name="checkout-phonenumber" placeholder="PHONE NUMBER"><br>
-            <div class="delivery-method-container">
-            <label class="pickup-free-delivery-button"><br>
-            <input type="radio" id="free-delivery" name="delivery-method">
-            </label>
-            <label class="home-delivery-button"><br>
-                <input type="radio" id="home-delivery" name="delivery-method">
-                </label>
-            </div><!--closes delivery-method-container div -->
-            <span class="delivery-address-information">DELIVERY ADDRESS</span><br>
-            <input type="text" id="checkout-firstandlast" name="checkout-firstandlast" placeholder="FIRST & LAST NAME"><br>
-            <input type="text" id="checkout-streetaddress" name="checkout-streetaddress" placeholder="STREET ADDRESS"><br>
-            <input type="text" id="checkout-zipcode" name="checkout-zipcode" placeholder="ZIP CODE"><br>
-            <input type="text" id="checkout-citytown" name="checkout-citytown" placeholder="CITY/TOWN"><br>
-            <input type="text" id="checkout-county" name="checkout-county" placeholder="COUNTY"><br>
-            <input type="text" id="checkout-country" name="checkout-country" placeholder="COUNTRY"><br>
+        <div class="container">
+            <div class="left">
+                <h2>CHECKOUT</h2>
+                <span class="checkout-contact-information">CONTACT INFORMATION</span><br>
+                <a href="login.html"><span>ALREADY HAVE AN ACCOUNT? LOG IN</span></a>
+                <form>
+                    <input type="text" id="checkout-email" name="checkout-email" placeholder="EMAIL"><br>
+                    <input type="text" id="checkout-phonenumber" name="checkout-phonenumber" placeholder="PHONE NUMBER"><br>
+                    <div class="delivery-method-container">
+                        <label class="pickup-free-delivery-button checkout-box"><br>
+                            <img src="img/icon-material-store@1x.png">
+                            <h3>Pickup</h3>
+                            <p>Free Delivery</p>
+                            <input type="radio" id="free-delivery" name="delivery-method">
+                        </label>
+                        <label class="home-delivery-button checkout-box"><br>
+                            <img src="img/path-2505@1x.png">
+                            <h3>Pickup</h3>
+                            <p>Free Delivery</p>
+                            <input type="radio" id="home-delivery" name="delivery-method">
+                        </label>
+                    </div>
+                    <!--closes delivery-method-container div -->
+                    <span class="delivery-address-information">DELIVERY ADDRESS</span><br>
+                    <input type="text" id="checkout-firstandlast" name="checkout-firstandlast" placeholder="FIRST & LAST NAME"><br>
+                    <input type="text" id="checkout-streetaddress" name="checkout-streetaddress" placeholder="STREET ADDRESS"><br>
+                    <input type="text" id="checkout-zipcode" name="checkout-zipcode" placeholder="ZIP CODE"><br>
+                    <input type="text" id="checkout-citytown" name="checkout-citytown" placeholder="CITY/TOWN"><br>
+                    <input type="text" id="checkout-county" name="checkout-county" placeholder="COUNTY"><br>
+                    <input type="text" id="checkout-country" name="checkout-country" placeholder="COUNTRY"><br>
 
-            <span class="payment-method-information">PAYMENT METHOD</span><br>
-            <input type="text" id="checkout-cardholder-name" name="checkout-cardholder-name" placeholder="CARDHOLDER NAME"><br>
-            <input type="text" id="checkout-cardnumber" name="checkout-cardnumber" placeholder="CARD NUMBER"><br>
-            <div class="expirydate-securitycode-container">
-            <input type="text" id="checkout-expirydate" name="checkout-expirydate" placeholder="EXPIRY DATE">
-            <input type="text" id="checkout-securitycode" name="checkout-securitycode" placeholder="CVV CODE"><br>
-            </div><!--closes expirydate-securitycode-container div-->
-            <input type="checkbox" id="billing-same-as-delivery" name="billing-same-as-delivery" checked><span>BILLING ADDRESS SAME AS DELIVERY</span>
-        </form>
-    </div><!--closes checkout-form-container div-->
+                    <span class="payment-method-information">PAYMENT METHOD</span><br>
+                    <input type="text" id="checkout-cardholder-name" name="checkout-cardholder-name" placeholder="CARDHOLDER NAME"><br>
+                    <input type="text" id="checkout-cardnumber" name="checkout-cardnumber" placeholder="CARD NUMBER"><br>
+                    <div class="expirydate-securitycode-container">
+                        <input type="text" id="checkout-expirydate" name="checkout-expirydate" placeholder="EXPIRY DATE">
+                        <input type="text" id="checkout-securitycode" name="checkout-securitycode" placeholder="CVV CODE"><br>
+                    </div>
+                    <!--closes expirydate-securitycode-container div-->
+                    <input type="checkbox" id="billing-same-as-delivery" name="billing-same-as-delivery" checked><span>BILLING ADDRESS SAME AS DELIVERY</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--closes checkout-form-container div-->
     <div class="footer">
         <div class="container">
-        <div class="logo">
-            <a href="index.html"><img src="img/homelogo.png"></a>
-        </div>
-        <nav>
-            <a href="menu.html">MENU</a>
-            <a href="order.html">ORDER</a>
-            <a href="book.html">BOOK</a>
-            <a href="locations.html">LOCATIONS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="index.html#contactustext">CONTACT</a>
-        </nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/homelogo.png"></a>
+            </div>
+            <nav>
+                <a href="menu.html">MENU</a>
+                <a href="order.html">ORDER</a>
+                <a href="book.html">BOOK</a>
+                <a href="locations.html">LOCATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="index.html#contactustext">CONTACT</a>
+            </nav>
         </div>
     </div>
     <!--closes footer div-->

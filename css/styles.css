@@ -51,7 +51,8 @@ img {
     letter-spacing: 1.4px;
     font-size: 12px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #9B5C0E;
     color: white;
 }
@@ -109,9 +110,11 @@ img {
     color: black;
     font-weight: 600;
 }
-#nav-list li a:hover{
-    color: #FC9701!important;
+
+#nav-list li a:hover {
+    color: #FC9701 !important;
 }
+
 .homelogo a img {
     height: auto;
     width: 100px;
@@ -167,7 +170,8 @@ img {
     text-decoration: none;
     color: white;
 }
-.landing-buttons-container ul li:hover{
+
+.landing-buttons-container ul li:hover {
     background-color: #9B5C0E;
     color: white;
 }
@@ -435,16 +439,22 @@ img {
 /*login*/
 .login-container {
     width: 100%;
-    background-image: url("../img/login-image.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
 }
 
-.login-form-container {
-    width: 50%;
-    padding: 2.5%;
-    padding-left: 7%;
+.login-image {
+    background-image: url("../img/login-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 60vh;
+    max-height: 600px;
+}
+
+.login-container .container .left {
+    margin-bottom: 30px;
 }
 
 .login-form-container h1 {
@@ -467,23 +477,18 @@ img {
 }
 
 .login-form {
-    width: 70%;
     margin-top: 2%;
-}
-
-#useremail,
-#userpassword {
-    width: 85.5%;
 }
 
 .login-form-container input[type=submit] {
     padding: 12px;
-    width: 91%;
+    width: 100%;
     background-color: #000;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1.4px;
     border: 3px solid #000;
+    margin-top: 30px;
 }
 
 .login-form-container input[type=submit]:hover {
@@ -617,7 +622,7 @@ img {
 }
 
 /*about page ends */
-
+/****footer****/
 .footer {
     background-color: #25341D;
     width: 100%;
@@ -625,8 +630,7 @@ img {
     justify-content: center;
     margin-top: 5%;
     padding-top: 2.5%;
-    padding-bottom: 2.5%;
-
+    padding-bottom: 5%;
 }
 
 .footer .logo {
@@ -643,115 +647,52 @@ img {
     color: #fff;
     letter-spacing: 1.4px;
     font-weight: 700;
+    font-size: 10px;
 }
 
 .footer img {
-    width: 300px;
+    width: 100px;
 }
-
+/**locations**/
 .locations-container {
     width: 100%;
-    padding-left: 5%;
-    padding-right: 10%;
     margin-top: 1%;
+    display: flex;
+    flex-flow: column;
 }
 
 .wesleychapel {
     margin-top: 2%;
 }
-
-.wesleychapel-text {
-    width: 40%;
+.box{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-flow: column;
+}
+.box-map img{
+    align-self: center;
+    width: 100%;
+}
+.locations-container h1{
+    margin-bottom: 30px;
+}
+.box-text {
     background-color: white;
-    float: left;
-    margin-left: 5%;
-    padding: 0.5%;
-    border: 2px solid #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
-
-.wesleychapel-map {
-    float: right;
-    margin-right: 20%;
+.box-text h2{
+    margin-bottom: 20px;
 }
-
-.lutz {
-    padding-top: 2%;
+.box-text p{
+    line-height: 30px;
 }
-
-.lutz-text {
-    width: 40%;
-    background-color: white;
-    float: left;
-    margin-left: 5%;
-    padding: 0.5%;
-    border: 2px solid #000;
-    margin-top: 1%;
-}
-
-.lutz-map {
-    float: right;
-    margin-right: 20%;
-    margin-top: 1%;
-}
-
-.templeterrace {
-    padding-top: 2%;
-}
-
-.templeterrace-text {
-    width: 40%;
-    background-color: white;
-    float: left;
-    margin-left: 5%;
-    padding: 0.5%;
-    border: 2px solid #000;
-    margin-top: 1%;
-}
-
-.templeterrace-map {
-    float: right;
-    margin-right: 20%;
-    margin-top: 1%;
-}
-
-.carrollwood {
-    padding-top: 2%;
-}
-
-.carrollwood-text {
-    width: 40%;
-    background-color: white;
-    float: left;
-    margin-left: 5%;
-    padding: 0.5%;
-    border: 2px solid #000;
-    margin-top: 1%;
-}
-
-.carrollwood-map {
-    float: right;
-    margin-right: 20%;
-    margin-top: 1%;
-}
-
-.odessa {
-    padding-top: 2%;
-}
-
-.odessa-text {
-    width: 40%;
-    background-color: white;
-    float: left;
-    margin-left: 5%;
-    padding: 0.5%;
-    border: 2px solid #000;
-    margin-top: 1%;
-}
-
-.odessa-map {
-    float: right;
-    margin-right: 20%;
-    margin-top: 1%;
+.box-map{
+    margin-bottom: 30px;
 }
 
 .footer-locations {
@@ -882,7 +823,7 @@ img {
 
 .cart-item img {
     width: 40%;
-    max-width:  130px;
+    max-width: 130px;
     align-self: center;
     margin-right: 30px;
 }
@@ -894,7 +835,7 @@ img {
 .info-desc {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .counter {
@@ -913,41 +854,49 @@ img {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 }
+
 .cart-title h2 {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     letter-spacing: 1.4px;
     font-size: 20pt;
     font-weight: 100;
 }
+
 .cart-top h3 {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     letter-spacing: 1.4px;
     font-size: 10pt;
     font-weight: 500;
 }
+
 .cart-item a {
     text-decoration: none;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     letter-spacing: 1.4px;
     color: #898989;
 }
-.bottom{
+
+.bottom {
     border-top: 1px solid #898989;
     padding-top: 30px;
 }
-.bottom .total{
+
+.bottom .total {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .bottom .btn-padding {
     display: flex;
 }
-.bottom .btn{
+
+.bottom .btn {
     width: 100%;
 }
+
 /************************Order page**************/
-.order-container .tabs button{
+.order-container .tabs button {
     border: none;
     background-color: white;
     padding-right: 20px;
@@ -955,215 +904,195 @@ img {
     font-size: 12px;
     font-weight: 300;
 }
+
 .order-container h2 {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     letter-spacing: 1.4px;
     font-size: 32pt;
     margin-bottom: 30px;
 }
-.order-container .tabs{
+
+.order-container .tabs {
     margin-bottom: 30px;
 }
-.food-item{
+
+.food-item {
     margin-bottom: 20px;
 }
-.food-item img{
+
+.food-item img {
     margin-bottom: 30px;
     width: 100%;
     max-width: 300px;
 }
+
 .food-container {
     display: flex;
     justify-content: space-between;
-flex-flow: wrap;    
+    flex-flow: wrap;
 }
+
 .food-item-desc {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }
-.order-container .btn-padding{
+
+.order-container .btn-padding {
     display: flex;
 }
-.order-container .btn{
- width: 100%;
-}
-/*********************************CHRIS ADD CSS HERE******************/
-.book-container{
+
+.order-container .btn {
     width: 100%;
-    padding-top: 5%;
-    padding-left: 5%;
+}
+
+/*********************************CHRIS ADD CSS HERE******************/
+/****book page*****/
+.book-container {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-content: center;
     align-items: center;
-    justify-content: center;
 }
 
-.fourteen-and-less{
-    width: 50%;
-    height: 70vh;
-    background-image: url("../img/fourteen-and-less.png");
+.fourteen-and-less {
+    width: 100%;
+    background-image: url("../img/fourteen.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
 }
 
-.groups-and-events{
-    width: 50%;
-    height: 70vh;
-    background-image: url("../img/groups-and-events.png");
-    background-repeat: no-repeat;
-}
-
-.fourteen-and-less a{
-    font-size: 12pt;
-    font-weight: 600;
-    background-color: orange;
-    text-decoration: none;
-    color: #000;
-    width: 30%;
-    border-radius: 40px;
-    border: 5px solid orange;
-    display: block;
-    margin-top: 50%;
-    margin-left: 27%;
-    padding: 1%;
+.fourteen-and-less .btn-padding {
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    right: 10%;
+    margin: 0px;
     text-align: center;
 }
 
-.groups-and-events a{
-    font-size: 12pt;
-    font-weight: 600;
-    background-color: orange;
-    text-decoration: none;
-    color: #000;
-    width: 30%;
-    border-radius: 40px;
-    border: 5px solid orange;
-    display: block;
-    margin-top: 50%;
-    margin-left: 27%;
-    padding: 1%;
+.groups-and-events {
+    width: 100%;
+    background-image: url("../img/groups.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+}
+
+.groups-and-events .btn-padding {
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    right: 10%;
+    margin: 0px;
     text-align: center;
 }
-
-.fourteen-and-less a:hover{
-    background-color: #fff;
-}
-
-.groups-and-events a:hover{
-    background-color: #fff;
-}
-
-.checkout-form-container{
+/*checkout*/
+.checkout-form-container {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 30%;
-    margin-left: 6%;
+    
 }
 
-.checkout-form-container h2{
+.checkout-form-container h2 {
     padding-bottom: 10%;
     font-size: 36pt;
 }
 
-.checkout-contact-information{
+.checkout-contact-information {
     font-weight: 600;
 }
 
-.checkout-form-container a{
+.checkout-form-container a {
     text-decoration: none;
     color: grey;
     padding-bottom: 5%;
     display: block;
 }
 
-.checkout-form-container input{
-    width: 70%;
-    padding-right: 20%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.checkout-form-container input {
+    padding: 10px 20px;
     margin-bottom: 2%;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     font-size: 12pt;
-}
-
-.delivery-method-container{
     width: 100%;
-    padding-bottom: 5%;
-    padding-top: 5%;
 }
 
-.pickup-free-delivery-button{
-    width: 40%;
-    height: 17vh;
-    background-image: url("../img/pickup-free-delivery-button.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: inline-block;
+.delivery-method-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-#free-delivery{
-    margin-top: 37.5%;
-    margin-left: 13.5%;
-    height: 2.4vh;
+.checkout-box{
+    text-align: center;
+        width: 48%;
+        border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    
+}
+.checkout-box img{
+    width: 30px;
 }
 
-.home-delivery-button{
-    width: 40%;
-    height: 17vh;
-    background-image: url("../img/home-delivery-button.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: inline-block;
-    margin-left: 10.5%;
-}
 
-#home-delivery{
-    margin-top: 37.5%;
-    margin-left: 13.5%;
-    height: 2.4vh;
-}
 
-.delivery-address-information{
+.delivery-address-information {
     font-weight: 600;
     display: block;
     padding-top: 5%;
 }
 
-#checkout-firstandlast{
+#checkout-firstandlast {
     margin-top: 3%;
 }
 
-#checkout-country{
+#checkout-country {
     margin-bottom: 5%;
 }
 
-.payment-method-information{
+.payment-method-information {
     font-weight: 600;
     display: block;
     padding-top: 7%;
 }
 
-#checkout-expirydate, #checkout-securitycode{
-    width: 22%;
+#checkout-expirydate,
+#checkout-securitycode {
 }
 
-.expirydate-securitycode-container{
+.expirydate-securitycode-container {
     width: 100%;
     display: flex;
     gap: 5%;
 }
 
-#billing-same-as-delivery{
+#billing-same-as-delivery {
     margin-top: 5%;
     width: 10%;
 }
 
-.order-placed{
+.order-placed {
     width: 100%;
     text-align: center;
     margin-top: 10%;
 }
 
-.view-order-button{
+.view-order-button {
     font-size: 12pt;
     font-weight: 600;
     background-color: transparent;
@@ -1178,7 +1107,7 @@ flex-flow: wrap;
     border: 3px solid orange;
 }
 
-.cancel-order-button{
+.cancel-order-button {
     font-size: 12pt;
     font-weight: 600;
     background-color: transparent;
@@ -1193,21 +1122,21 @@ flex-flow: wrap;
     border: 3px solid orange;
 }
 
-.order-placed-buttons-container{
+.order-placed-buttons-container {
     margin-top: 10%;
 }
 
-.order-placed-buttons-container a:hover{
+.order-placed-buttons-container a:hover {
     background-color: orange;
 }
 
-.order-placed h1{
+.order-placed h1 {
     font-size: 36pt;
     letter-spacing: 1.4px;
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
 }
 
-.return-home-button{
+.return-home-button {
     font-size: 12pt;
     font-weight: 600;
     background-color: transparent;
@@ -1222,11 +1151,11 @@ flex-flow: wrap;
     border: 3px solid orange;
 }
 
-.return-home-button:hover{
+.return-home-button:hover {
     background-color: orange;
 }
 
-.download-the-pdf{
+.download-the-pdf {
     text-decoration: none;
     background: transparent;
     border: 3px solid orange;
@@ -1243,15 +1172,15 @@ flex-flow: wrap;
     margin-top: 1%;
 }
 
-.download-the-pdf:hover{
+.download-the-pdf:hover {
     background-color: orange;
 }
 
-.menu-page-container{
+.menu-page-container {
     width: 100%;
 }
 
-.menu-page-container h2{
+.menu-page-container h2 {
     text-align: center;
     margin-top: 1%;
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
@@ -1260,64 +1189,65 @@ flex-flow: wrap;
     padding-bottom: 5%;
 }
 
-.menu-page-container h3{
+.menu-page-container h3 {
     text-align: center;
     margin-top: 1%;
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     font-size: 20pt;
 }
 
-.menu-page-container h4{
+.menu-page-container h4 {
     text-align: center;
     margin-top: 1%;
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     font-size: 16pt;
 }
 
-.dishes-and-toppings-container{
+.dishes-and-toppings-container {
     width: 60%;
     margin-left: 20%;
 }
 
-.dishes-and-toppings-container table{
+.dishes-and-toppings-container table {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     font-size: 18pt;
     margin-top: 2%;
 }
 
-.dishes-and-toppings-container tr{
+.dishes-and-toppings-container tr {
     padding-top: 1%;
 }
 
-.dish-price{
+.dish-price {
     padding-left: 40vh;
     text-align: left;
     font-size: 24pt;
 }
 
-.dish-price-lunch{
+.dish-price-lunch {
     padding-left: 40vh;
     text-align: left;
     font-size: 18pt;
 }
 
-.topping{
+.topping {
     padding-left: 10vh;
 }
 
-.dish{
+.dish {
     text-align: left;
     padding-top: 2%;
     font-size: 24pt;
 }
 
-.soups-salads-dish-price{
+.soups-salads-dish-price {
     padding-left: 50vh;
 }
 
-.dishes-and-toppings-container td{
+.dishes-and-toppings-container td {
     height: 5vh;
 }
+
 /*********************************CHRIS ADD CSS HERE******************/
 /*remain at bottom*/
 
@@ -1376,10 +1306,11 @@ flex-flow: wrap;
 
 /*mobile-first styling*/
 @media only screen and (min-width: 375px) {
-.food-item{
-    max-width: 50%;
+    .food-item {
+        max-width: 50%;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .header {
         background-image: url(../img/landingbackground.PNG);
@@ -1445,30 +1376,83 @@ flex-flow: wrap;
     .form-container {
         margin-left: 60px;
     }
-    
 
-.cart-item img {
-    width: 130px;
-    align-self: center;
-    margin-right: 30px;
-}
 
-.counter {
-    margin: 30px 0px 10px;
-}
+    .cart-item img {
+        width: 130px;
+        align-self: center;
+        margin-right: 30px;
+    }
 
-.counter button {
-    padding: 10px 10px;
-}
+    .counter {
+        margin: 30px 0px 10px;
+    }
 
-.counter p {
-    padding: 10px 30px;
-}
-.cart-title h2 {
-    font-size: 20pt;
-}
-.cart-top h3 {
-    font-size: 14pt;
-}
+    .counter button {
+        padding: 10px 10px;
+    }
 
+    .counter p {
+        padding: 10px 30px;
+    }
+
+    .cart-title h2 {
+        font-size: 20pt;
+    }
+
+    .cart-top h3 {
+        font-size: 14pt;
+    }
+
+    .book-container .container {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+    }
+
+    .fourteen-and-less,
+    .groups-and-events {
+        max-width: 400px;
+        width: auto;
+        max-width: 48%;
+        width: -webkit-fill-available;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+
+    .login-container .container .login-form-container{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+        align-content: center;
+        align-items: center;
+    }
+    .login-container .container .left{
+        margin-right: 30px;
+    }
+    .login-container .container .left,
+    .login-image {
+        width: auto;
+        max-width: 50%;
+    }
+    .login-image{
+        width: -webkit-fill-available;
+    }
+    .box{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .box-text, .box-map{
+        width: 45%;
+    }
+    .box-text{
+        height: 400px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .checkout-form-container .container {
+        max-width: 600px;
+    }
 }
