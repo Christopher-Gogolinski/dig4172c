@@ -1,92 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1920, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width">
     <!--<link rel="shortcut icon" type="image/png" href=""/>-->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
-  <body class="home">
-    <div class="main-navigation-home">
-        <div class="homelogo">
-            <a href="index.html"><img src="img/homelogo.png" height="50%" width="50%"></a>
-        </div>
-    <nav>
-        <a href="menu.html">MENU</a>
-        <a href="order.html">ORDER</a>
-        <a href="book.html">BOOK</a>
-        <a href="locations.html">LOCATIONS</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="createaccount.html"><img src="img/profilelogo-home.png" width="20px"></a>
-        <a href="cart.html"><img src="img/shoppingcartlogo-home.png" width="20px"></a>
-    </nav>
-    </div><!--closes main-navigation container div-->
-    <div class="landing-buttons-container">
-        <a href="menu.html" class="landing-menu-button">MENU</a>
-        <a href="order.html" class="landing-order-button">ORDER ONLINE</a>
-    </div><!--closes landing-buttons-container div-->
-    <div class="featured-meals">
-        <span class="featured-meals-heading">FEATURED MEALS</span><br>
-        <span class="our-fan-favorites">Our fan favorites</span>
-    </div><!--closes featured-meals div-->
-    <div class="featured-meals-carousel-container">
-        <img src="img/carousel-image1.png" class="featured-meals-carousel-image">
-        <img src="img/carousel-image2.png" class="featured-meals-carousel-image">
-        <img src="img/carousel-image3.png" class="featured-meals-carousel-image">
-        <img src="img/carousel-image4.png" class="featured-meals-carousel-image">
-    </div><!--closes featured-meals-carousel-container div-->
-    <div class="ourstory-home">
-        <span class="ourstory-home-heading">OUR STORY</span><br>
-        <span class="a-family-owned-business ">A Family Owned Business</span>
-        <p>
-            Family owned and operated, Vallarta's Mexican Restaurant
-            has been in business since 1992. With everything from
-            margaritas to fajitas to tacos, we truly are an authentic Mexican
-            restaurant. We feature a warm, friendly atmosphere that you, your
-            friends and your family are sure to enjoy.
-        </p>
-        <div class="learn-more-button-container">
-            <a href="about.html" class="landing-about-button">LEARN MORE</a>
-        </div><!--closes learn-more-button-container div-->
-    </div><!--closes ourstory-home div-->
-    <div class="book-a-table-container">
-        <div class="book-a-table-article">
-            <span class="book-a-table-heading">BOOK A TABLE</span><br>
-            <p class="book-a-table-text">Have Some Fun With Your Friends Or Family AHEAD OF TIME</p>
-            <div class="book-now-button-container">
-                <a href="book.html" class="book-now-button">BOOK NOW</a>
-            </div><!--closes learn-more-button-container div-->
-        </div><!--closes book-a-table-article div-->
-    </div><!--closes book-a-table-container div-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="js/script.js" type="text/javascript"></script>-->
+</head>
 
-    <div class="weareoninstagram-container">
-        <span class="weareoninstagram-heading">WE ARE ON INSTAGRAM</span><br><br><br>
-        <div class="atvallartasfl">
-            @VALLARTASFL
-        </div><!--closes atvallartasfl div-->
-    </div><!--closes weareoninstagram-container div-->
+<body>
+    <div class="header home">
+        <nav class="main-navigation" id="nav-bk">
+            <div class="homelogo">
+                <a href="index.html"><img src="img/homelogo.png"></a>
+            </div>
+            <ul class="menu-list home-nav" id="nav-list">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="createaccount.html"><img src="img/icon-person-white.svg"></a></li>
+                <li><a href="cart.html"><img src="img/icon-cart-white.svg"></a></li>
+            </ul>
+            <div class="hamburger" id="toggle">
+                <div class="bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <div class="landing-buttons-container">
+            <ul>
+                <li><a href="menu.html" class="landing-menu-button">MENU</a></li>
+                <li><a href="order.html" class="landing-order-button">ORDER ONLINE</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--closes main-navigation container div-->
+
+    <!--closes landing-buttons-container div-->
+    <section class="featured-meals">
+        <div class="container">
+            <h2>FEATURED MEALS</h2><br>
+            <h3>Our fan favorites</h3>
+            <!--closes featured-meals div-->
+            <div class="featured-meals-carousel-container">
+                <img src="img/carousel-image1.png" class="featured-meals-carousel-image">
+                <img src="img/carousel-image2.png" class="featured-meals-carousel-image">
+                <img src="img/carousel-image3.png" class="featured-meals-carousel-image">
+                <img src="img/carousel-image4.png" class="featured-meals-carousel-image">
+            </div>
+        </div>
+    </section>
+    <!--closes featured-meals-carousel-container div-->
+    <section class="ourstory-home">
+        <div class="container">
+
+            <div class="left">
+                <h2>OUR STORY</h2><br>
+                <h3>A Family Owned Business</h3>
+                <p>Family owned and operated, Vallarta's Mexican Restaurant has been in business since 1992. With everything from margaritas to fajitas to tacos, we truly are an authentic Mexican restaurant. We feature a warm, friendly atmosphere that you, your friends and your family are sure to enjoy.
+                </p>
+                <div class="btn-padding">
+                    <a href="about.html" class="btn">LEARN MORE</a>
+                </div>
+            </div>
+            <img src="img/ourstory-home-image.PNG">
+        </div>
+        <!--closes learn-more-button-container div-->
+    </section>
+    <!--closes ourstory-home div-->
+    <section class="book-a-table-container">
+        <div class="container">
+            <div class="book-a-table-article">
+                <h2>BOOK A TABLE</h2><br>
+                <p>Have Some Fun With Your Friends Or Family AHEAD OF TIME</p>
+                <div class="btn-padding">
+                    <a href="book.html" class="btn">BOOK NOW</a>
+                </div>
+                <!--closes learn-more-button-container div-->
+            </div>
+        </div>
+        <!--closes book-a-table-article div-->
+    </section>
+    <!--closes book-a-table-container div-->
+
+    <section class="weareoninstagram-container">
+        <div class="container">
+            <h2>WE ARE ON INSTAGRAM</h2><br><br><br>
+            <div class="handle">
+                <img src="img/instagramicon.png">
+                <h3>
+                    @VALLARTASFL
+                </h3>
+            </div>
+        </div>
+        <!--closes atvallartasfl div-->
+    </section>
+    <!--closes weareoninstagram-container div-->
     <div class="instagram-images-container">
         <img src="img/instagram-image1.png" class="instagram-image">
         <img src="img/instagram-image2.png" class="instagram-image">
         <img src="img/instagram-image3.png" class="instagram-image">
         <img src="img/instagram-image4.png" class="instagram-image">
-    </div><!--closes instagram-images-container div-->
-    <div class="contactus-container">
-        <div class="contactus-form-container">
-        <h1>CONTACT US</h1>
-        <form class="contactus-form">
-            <input type="text" id="contactus-firstname" name="contactus-firstname" placeholder="FIRST NAME">
-            <input type="text" id="contactus-lastname" name="contactus-lastname" placeholder="LAST NAME"><br>
-            <input type="text" id="contactus-email" name="contactus-email" placeholder="EMAIL"><br>
-            <input type="text" id="contactus-subject" name="contactus-subject" placeholder="SUBJECT"><br>
-            <textarea id="contactus-message" name="contactus-message" placeholder="WRITE MESSAGE HERE..." rows="10"></textarea><br>
-            <input type="submit" value="SUBMIT">
-        </form>
-        </div><!--closes contactus-form-container div-->
-    </div><!--closes contactus-container div-->
+    </div>
+    <!--closes instagram-images-container div-->
+    <section class="contactus-container">
+        <div class="left">
+        </div>
+        <div class="container">
+            <div class="form-container">
+                <h2>CONTACT US</h2>
+                <form class="contactus-form">
+                    <input type="text" id="contactus-firstname" name="contactus-firstname" placeholder="FIRST NAME">
+                    <input type="text" id="contactus-lastname" name="contactus-lastname" placeholder="LAST NAME"><br>
+                    <input type="text" id="contactus-email" name="contactus-email" placeholder="EMAIL"><br>
+                    <input type="text" id="contactus-subject" name="contactus-subject" placeholder="SUBJECT"><br>
+                    <textarea id="contactus-message" name="contactus-message" placeholder="WRITE MESSAGE HERE..." rows="10"></textarea><br>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--closes contactus-form-container div-->
+    </section>
+    <!--closes contactus-container div-->
     <div class="footer">
-        <div class="homelogo">
+        <div class="container">
+        <div class="logo">
             <a href="index.html"><img src="img/homelogo.png"></a>
         </div>
         <nav>
@@ -97,7 +140,18 @@
             <a href="about.html">ABOUT</a>
             <a href="contact.html">CONTACT</a>
         </nav>
-    </div><!--closes footer div-->
+        </div>
+    </div>
+    <!--closes footer div-->
+
 </body>
-</html>
-  
+<script>
+    const toggleButton = document.getElementById('toggle')
+    const navList = document.getElementById('nav-list');
+    const navBk = document.getElementById('nav-bk');
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        navBk.style.backgroundColor = "#25341D";
+
+    })
+</script></html>
