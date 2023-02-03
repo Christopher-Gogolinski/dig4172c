@@ -59,4 +59,15 @@
         </div>
     </section>
 
-</body></html>
+</body>
+    <script>
+    const toggleButton = document.getElementById('toggle')
+    const navList = document.getElementById('nav-list');
+    const navBk = document.getElementById('nav-bk');
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        navBk.style.backgroundColor = "#25341D";
+
+    })
+</script>
+</html>

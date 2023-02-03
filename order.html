@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="shortcut icon" type="image/png" href=""/>-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="subpages">
+        <nav class="main-navigation" id="nav-bk">
+            <div class="homelogo">
+                <a href="index.html"><img src="img/homelogo.png" alt="vallartaslogo"></a>
+            </div>
+            <ul class="menu-list home-nav" id="nav-list">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="createaccount.html"><img src="img/icon-person-black.svg" alt="person"></a></li>
+                <li><a href="cart.html"><img src="img/icon-cart-black.svg" alt="shopping cart"></a></li>
+            </ul>
+            <div class="hamburger" id="toggle">
+                <div class="bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+    <section class="order-container">
+        <div class="container">
+            <h2>Order</h2>
+            <div class="tabs">
+                <button class="bar" onclick="tabMenu('Dinner')">Dinner</button>
+                <button class="bar" onclick="tabMenu('Lunch')">Lunch</button>
+                <button class="bar" onclick="tabMenu('Dessert')">Dessert</button>
+                <button class="bar" onclick="tabMenu('Drinks')">Drinks</button>
+            </div>
+            <div id="Dinner" class="food-container">
+                <div class="food-item">
+                    <img src="img/carneasada.png" alt="carne asada">
+                    <div class="food-item-desc">
+                        <p>CARNE ASADA</p>
+                        <p>$13.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/parrallila.png" alt="parrallila">
+                    <div class="food-item-desc">
+                        <p>PARRILLADA</p>
+                        <p>$7.50</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/quesadilla.png" alt="quesadilla">
+                    <div class="food-item-desc">
+                        <p>QUESADILLAS</p>
+                        <p>$13.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/steakfajitas.png" alt="steakfajitas">
+                    <div class="food-item-desc">
+                        <p>FAJITAS</p>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/carnitas.png" alt="carnitas">
+                    <div class="food-item-desc">
+                        <p>CARNITAS</p>
+                        <p>$13.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/steakandshrimp.png" alt="steakandshrimp">
+                    <div class="food-item-desc">
+                        <p>STEAK &amp; SHRIMP</p>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/pollo-fundido-2-5@1x.png" alt="pollo-fundido">
+                    <div class="food-item-desc">
+                        <p>POLLO FUNDIDO</p>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="img/pollo-loco@1x.png" alt="pollo-loco">
+                    <div class="food-item-desc">
+                        <p>POLLO LOCO</p>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Add to Cart ></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="img/homelogo.png"></a>
+        </div>
+        <nav>
+            <a href="menu.html">MENU</a>
+            <a href="order.html">ORDER</a>
+            <a href="book.html">BOOK</a>
+            <a href="locations.html">LOCATIONS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        </div>
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle')
+    const navList = document.getElementById('nav-list');
+    const navBk = document.getElementById('nav-bk');
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        navBk.style.backgroundColor = "#25341D";
+
+    })
+</script></html>

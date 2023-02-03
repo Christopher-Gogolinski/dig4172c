@@ -44,6 +44,15 @@ img {
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+.btn:hover{
+    background-color: #9B5C0E;
     color: white;
 }
 
@@ -88,7 +97,7 @@ img {
     width: 30px;
     height: 2px;
     margin: 7px;
-    background: #b1d4e0;
+    background: #FC9701;
 }
 
 .main-navigation ul li a {
@@ -100,7 +109,9 @@ img {
     color: black;
     font-weight: 600;
 }
-
+#nav-list li a:hover{
+    color: #FC9701!important;
+}
 .homelogo a img {
     height: auto;
     width: 100px;
@@ -154,6 +165,10 @@ img {
 
 .landing-buttons-container ul li a {
     text-decoration: none;
+    color: white;
+}
+.landing-buttons-container ul li:hover{
+    background-color: #9B5C0E;
     color: white;
 }
 
@@ -278,6 +293,7 @@ img {
 .book-a-table-article .btn {
     background-color: #25341D;
     border: 2px solid #FC9701;
+    color: white;
 }
 
 .book-a-table-article h2 {
@@ -930,7 +946,48 @@ img {
 .bottom .btn{
     width: 100%;
 }
-
+/************************Order page**************/
+.order-container .tabs button{
+    border: none;
+    background-color: white;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+}
+.order-container h2 {
+    font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 32pt;
+    margin-bottom: 30px;
+}
+.order-container .tabs{
+    margin-bottom: 30px;
+}
+.food-item{
+    margin-bottom: 20px;
+}
+.food-item img{
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+.food-container {
+    display: flex;
+    justify-content: space-between;
+flex-flow: wrap;    
+}
+.food-item-desc {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.order-container .btn-padding{
+    display: flex;
+}
+.order-container .btn{
+ width: 100%;
+}
 /*********************************CHRIS ADD CSS HERE******************/
 
 /*********************************CHRIS ADD CSS HERE******************/
@@ -990,6 +1047,11 @@ img {
 }
 
 /*mobile-first styling*/
+@media only screen and (min-width: 375px) {
+.food-item{
+    max-width: 50%;
+    }
+}
 @media only screen and (min-width: 768px) {
     .header {
         background-image: url(../img/landingbackground.PNG);
