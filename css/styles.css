@@ -499,83 +499,102 @@ img {
 /*
 /*about page begins */
 
-.ourstory {
+.ourstory .container{
     background-image: url("../img/about-page-image1.png");
     background-repeat: no-repeat;
-    height: 650px;
+    background-size: cover;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .ourstory-article {
-    width: 800px;
-    height: 642px;
     background-color: #FFF8EF;
-    float: right;
-    margin-right: 10%;
-    margin-top: 5%;
-    text-align: center;
+    width: 600px;
+        padding: 20px 40px;
 }
 
 .ourstory-article h1 {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
 
 .ourstory-article p {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 30px;
 }
 
 .ourvalues {
-    margin-top: 10%;
-    margin-left: 10%;
-    width: 70%;
+    padding: 40px 0px;
+    
+}
+.ourvalues h2{
+    margin-bottom: 30px;
+}
+.value-box{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
 }
 
 .ourvalues p {
-    display: flex;
+     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 30px;
 }
 
 .micasa {
     background-image: url("../img/about-page-image2.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 840px;
-    width: 100%;
-    margin-top: 20%;
+    position: relative;
 }
 
 .micasa-article {
     background-color: #25341D;
-    color: white;
-    width: 815px;
-    height: 425px;
-    margin-left: 5%;
-    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    color: #fff;
+    padding: 40px 20px 20px;
 }
 
 .micasa-article h1 {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
-
+.micasa-article p{
+    line-height: 30px;
+}
+.adv-tab{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0px;
+    background-color: #FFF8EF;
+    text-align: center;
+    max-width: 300px;
+    padding: 20px 20px 5px;
+    margin: auto;
+}
+.adv-tab h2{
+    font-size: 1.5em;
+}
 .ouradvantages {
     text-align: center;
 }
 
 .onetwothree-container {
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    gap: 1%;
+    flex-flow: column;
+    width: 100%;
 }
-
-.advantageOne,
-.advantageTwo,
-.advantageThree {
-    width: 25%;
-    background-color: #FFF8EF;
+.ad-box{
+     background-color: #FFF8EF;
     border-color: #E6DCCE;
-    border-width: 3px;
-    margin-top: 1%;
+    padding: 20px;
+}
+.ad-box p{
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .advantageOne img,
@@ -583,12 +602,7 @@ img {
 .advantageThree img {
     margin-top: 5%;
     width: 50%;
-}
-
-.advantageOne p,
-.advantageTwo p,
-.advantageThree p {
-    font-size: 20pt;
+    margin-bottom: 40px;
 }
 
 .ourteam {
@@ -596,7 +610,7 @@ img {
 }
 
 .ourteam h1 {
-    margin-left: 5%;
+    margin-bottom: 30px;
 }
 
 .teampic-container {
@@ -604,21 +618,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.teammemberOne,
-.teammemberTwo,
-.teammemberThree {
-    width: 30%;
-    border-width: 3px;
-    margin-top: 1%;
-}
-
-.teammemberOne img,
-.teammemberTwo img,
-.teammemberThree img {
-    width: 75%;
-    margin-top: 5%;
+    flex-flow: column;
 }
 
 /*about page ends */
@@ -1454,5 +1454,45 @@ img {
     }
     .checkout-form-container .container {
         max-width: 600px;
+    }
+    .ourstory .container {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: flex-end;
+            height: 650px;
+
+    }
+    .value-box{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+    .value-box p{
+        width: 45%;
+    }
+    .ourvalues {
+        padding: 70px 20px;
+    }
+    .micasa-article{
+        max-width: 500px;
+        
+    }
+    .onetwothree-container {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.ad-box{
+     background-color: #FFF8EF;
+    border-color: #E6DCCE;
+    padding: 20px;
+}
+    .teampic-container {
+    flex-flow: row;
+        justify-content: space-between;
+}
+    .teammember{
+        width: 300px;
     }
 }
