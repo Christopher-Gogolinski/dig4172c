@@ -453,6 +453,27 @@ img {
     max-height: 600px;
 }
 
+.create-account-container .login-image {
+    background-image: url("../img/create-account-image.png");
+    height: 90vh;
+    max-height: 600px;
+    background-position: center;
+}
+.events-container .login-image {
+    background-image: url("../img/pexels-los-muertos-crew-7772194-1@1x.png");
+    height: 90vh;
+    max-height: 600px;
+    background-position: center;
+}
+.fourteen-container .login-image {
+    background-image: url("../img/14andless.png");
+    height: 90vh;
+    max-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+
 .login-container .container .left {
     margin-bottom: 30px;
 }
@@ -499,7 +520,7 @@ img {
 /*
 /*about page begins */
 
-.ourstory .container{
+.ourstory .container {
     background-image: url("../img/about-page-image1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -511,7 +532,7 @@ img {
 .ourstory-article {
     background-color: #FFF8EF;
     width: 600px;
-        padding: 20px 40px;
+    padding: 20px 40px;
 }
 
 .ourstory-article h1 {
@@ -526,19 +547,21 @@ img {
 
 .ourvalues {
     padding: 40px 0px;
-    
+
 }
-.ourvalues h2{
+
+.ourvalues h2 {
     margin-bottom: 30px;
 }
-.value-box{
+
+.value-box {
     display: flex;
     justify-content: space-between;
     flex-flow: column;
 }
 
 .ourvalues p {
-     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     line-height: 30px;
 }
 
@@ -561,10 +584,12 @@ img {
     font-family: 'BobbyJones Soft-Regular', Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
-.micasa-article p{
+
+.micasa-article p {
     line-height: 30px;
 }
-.adv-tab{
+
+.adv-tab {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -575,9 +600,11 @@ img {
     padding: 20px 20px 5px;
     margin: auto;
 }
-.adv-tab h2{
+
+.adv-tab h2 {
     font-size: 1.5em;
 }
+
 .ouradvantages {
     text-align: center;
 }
@@ -587,12 +614,14 @@ img {
     flex-flow: column;
     width: 100%;
 }
-.ad-box{
-     background-color: #FFF8EF;
+
+.ad-box {
+    background-color: #FFF8EF;
     border-color: #E6DCCE;
     padding: 20px;
 }
-.ad-box p{
+
+.ad-box p {
     font-size: 20px;
     margin-top: 30px;
 }
@@ -653,6 +682,7 @@ img {
 .footer img {
     width: 100px;
 }
+
 /**locations**/
 .locations-container {
     width: 100%;
@@ -664,19 +694,23 @@ img {
 .wesleychapel {
     margin-top: 2%;
 }
-.box{
+
+.box {
     display: flex;
     align-self: center;
     align-items: center;
     flex-flow: column;
 }
-.box-map img{
+
+.box-map img {
     align-self: center;
     width: 100%;
 }
-.locations-container h1{
+
+.locations-container h1 {
     margin-bottom: 30px;
 }
+
 .box-text {
     background-color: white;
     border: 1px solid #000;
@@ -685,13 +719,16 @@ img {
     margin-bottom: 20px;
     width: 100%;
 }
-.box-text h2{
+
+.box-text h2 {
     margin-bottom: 20px;
 }
-.box-text p{
+
+.box-text p {
     line-height: 30px;
 }
-.box-map{
+
+.box-map {
     margin-bottom: 30px;
 }
 
@@ -722,29 +759,6 @@ img {
     margin-left: 75%;
 }
 
-.create-account-container {
-    width: 100%;
-    background-image: url("../img/create-account-image.png");
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.create-account-form-container {
-    width: 50%;
-    padding: 2.5%;
-    padding-left: 7%;
-}
-
-.create-account-form-container h1 {
-    font-size: 36pt;
-    letter-spacing: 1.4px;
-}
-
-.create-account-form-container a {
-    text-decoration: none;
-    color: grey;
-    font-weight: 400;
-}
 
 .create-account-form-container input[type=text] {
     width: 100%;
@@ -752,40 +766,6 @@ img {
     margin: 10px 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500;
-}
-
-.create-account-form {
-    width: 70%;
-    margin-top: 2%;
-}
-
-#firstname {
-    width: 40%;
-}
-
-#lastname {
-    width: 40%;
-}
-
-#email,
-#phone,
-#password {
-    width: 86%;
-}
-
-.create-account-form-container input[type=submit] {
-    padding: 12px;
-    width: 91%;
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1.4px;
-    border: 3px solid #000;
-}
-
-.create-account-form-container input[type=submit]:hover {
-    background-color: #fff;
-    color: #000;
 }
 
 /************************Cart page**************/
@@ -993,10 +973,11 @@ img {
     margin: 0px;
     text-align: center;
 }
+
 /*checkout*/
 .checkout-form-container {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    
+
 }
 
 .checkout-form-container h2 {
@@ -1028,13 +1009,13 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.checkout-box{
+.checkout-box {
     text-align: center;
-        width: 48%;
-        border: 1px solid black;
+    width: 48%;
+    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     flex-flow: column;
@@ -1042,10 +1023,17 @@ img {
     align-items: center;
     padding: 20px 10px;
     border-radius: 10px;
-
-    
 }
-.checkout-box img{
+.checkout-form-container .btn{
+    color: black;
+    padding: 15px;
+}
+.checkout-form-container .btn-padding{
+    margin-top: 20px;
+}
+
+
+.checkout-box img {
     width: 30px;
 }
 
@@ -1072,8 +1060,7 @@ img {
 }
 
 #checkout-expirydate,
-#checkout-securitycode {
-}
+#checkout-securitycode {}
 
 .expirydate-securitycode-container {
     width: 100%;
@@ -1249,6 +1236,16 @@ img {
 }
 
 /*********************************CHRIS ADD CSS HERE******************/
+
+.events-container p {
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.events-container h2 {
+    margin-bottom: 20px;
+}
+
 /*remain at bottom*/
 
 .home-nav li a {
@@ -1421,78 +1418,98 @@ img {
         height: 500px;
     }
 
-    .login-container .container .login-form-container{
+    .login-container .container .login-form-container {
         display: flex;
         justify-content: space-between;
         flex-flow: row;
         align-content: center;
         align-items: center;
     }
-    .login-container .container .left{
+
+    .login-container .container .left {
         margin-right: 30px;
     }
+
     .login-container .container .left,
     .login-image {
         width: auto;
         max-width: 50%;
     }
-    .login-image{
+
+    .login-image {
         width: -webkit-fill-available;
     }
-    .box{
+
+    .box {
         flex-flow: row;
         justify-content: space-between;
     }
-    .box-text, .box-map{
+
+    .box-text,
+    .box-map {
         width: 45%;
     }
-    .box-text{
+
+    .box-text {
         height: 400px;
         display: flex;
         flex-flow: column;
         justify-content: center;
     }
+
     .checkout-form-container .container {
         max-width: 600px;
     }
+
     .ourstory .container {
         display: flex;
         justify-content: flex-end;
         text-align: center;
         align-items: flex-end;
-            height: 650px;
+        height: 650px;
 
     }
-    .value-box{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row;
-}
-    .value-box p{
+
+    .value-box {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+    }
+
+    .value-box p {
         width: 45%;
     }
+
     .ourvalues {
         padding: 70px 20px;
     }
-    .micasa-article{
+
+    .micasa-article {
         max-width: 500px;
-        
+
     }
+
     .onetwothree-container {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-.ad-box{
-     background-color: #FFF8EF;
-    border-color: #E6DCCE;
-    padding: 20px;
-}
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+    }
+
+    .ad-box {
+        background-color: #FFF8EF;
+        border-color: #E6DCCE;
+        padding: 20px;
+    }
+
     .teampic-container {
-    flex-flow: row;
+        flex-flow: row;
         justify-content: space-between;
-}
-    .teammember{
+    }
+
+    .teammember {
         width: 300px;
+    }
+    .events-container .login-image{
+        
     }
 }

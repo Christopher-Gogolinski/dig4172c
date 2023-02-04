@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="shortcut icon" type="image/png" href=""/>-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="subpages">
+        <nav class="main-navigation" id="nav-bk">
+            <div class="homelogo">
+                <a href="index.html"><img src="img/homelogo.png" alt="vallartaslogo"></a>
+            </div>
+            <ul class="menu-list home-nav" id="nav-list">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="index.html#contactustext">CONTACT</a></li>
+                <li><a href="createaccount.html"><img src="img/icon-person-black.svg" alt="person"></a></li>
+                <li><a href="cart.html"><img src="img/icon-cart-black.svg" alt="shopping cart"></a></li>
+            </ul>
+            <div class="hamburger" id="toggle">
+                <div class="bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="events-container login-container fourteen-container">
+        <div class="container">
+            <div class="login-form-container">
+                <div class="left">
+                    <h2>14 &amp; LESS</h2>
+                    <p>Everyone loves their special moments, so why not go all out with booking a table with us?! </p>
+                    <p>Whether that be for your big graduation celebration, or just spending time with your significant other, Vallarta’s will be more than happy to welcome you.</p>
+                    <p>We guarantee top-of-the-line entertainment and experiences for our guests,so they will never forget their special night!</p>
+                    <p>Booking a table with us is super simple! Just choose the certain event, find the perfect time for you, and you are all set! </p>
+                    <p>Why wait, book now and enjoy the wonderful culture Vallarta’s has to offer!</p>
+                    <div class="btn-padding">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="login-image"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/homelogo.png"></a>
+            </div>
+            <nav>
+                <a href="menu.html">MENU</a>
+                <a href="order.html">ORDER</a>
+                <a href="book.html">BOOK</a>
+                <a href="locations.html">LOCATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="index.html#contactustext">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+    <!--closes footer div-->
+
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle')
+    const navList = document.getElementById('nav-list');
+    const navBk = document.getElementById('nav-bk');
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        navBk.style.backgroundColor = "#25341D";
+
+    })
+</script></html>
